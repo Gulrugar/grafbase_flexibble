@@ -29,10 +29,12 @@ export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 export const revalidate = 0;
 
+/// Vercel missed this the last push so now I need to push again
+
 const Home = async ({ searchParams: { category, endcursor } }: Props) => {
   const data = (await fetchAllProjects(
     category || "all",
-    endcursor
+    endcursor || ""
   )) as ProjectSearch;
 
   const projectsToDisplay = data?.projectSearch?.edges || [];
