@@ -60,7 +60,7 @@ export const projectsQuery = `
 
 export const projectsQueryAll = `
   query getProjects() {
-    projectSearch(first: 100}) {
+    projectSearch(first: 100) {
       pageInfo {
         hasNextPage
         hasPreviousPage
