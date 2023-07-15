@@ -31,7 +31,7 @@ export const revalidate = 0;
 
 const Home = async ({ searchParams: { category, endcursor } }: Props) => {
   const data = (await fetchAllProjects(
-    category || "",
+    category || "all",
     endcursor
   )) as ProjectSearch;
 
@@ -41,7 +41,7 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
 
   if (projectsToDisplay.length === 0) {
     return (
-      <section className="flexStart flex-col padddings">
+      <section className="flexStart flex-col paddings">
         <Categories />
         <p className="no-result-text text-center">No projects found</p>
       </section>
