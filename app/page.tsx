@@ -17,8 +17,8 @@ type ProjectSearch = {
 };
 
 type searchParams = {
-  category?: string;
-  endcursor?: string;
+  category?: string | null;
+  endcursor?: string | null;
 };
 
 type Props = {
