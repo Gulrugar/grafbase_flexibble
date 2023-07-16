@@ -1,16 +1,16 @@
-# Project Title
+# Flexibble: A Website for Sharing Web Development Projects
 
-[Visit the live demo website =>](https://youtube.com "On hover title")
+[Visit the live demo website =>](https://flexibble-pearl.vercel.app "Flexibble")
 
 ## Description
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quos, labore tenetur deleniti eos beatae officia. Tempore iste eius praesentium quia temporibus odit, voluptate dicta, ullam ab non dolore necessitatibus ducimus recusandae deserunt facere. Voluptas libero numquam cumque harum maiores?
+A full stack website for sharing Web Development projects built with NextJS 13. Users can sign in using their Google accounts and upload projects. Users can also edit and delete their projects and view other user projects. Includes filtering by a varierty of filters includeing Frontend, Backend, Mobile Apps, Machine Learning, E-Commerce, etc.
 
-Key Points:
+Key Features:
 
-1. Point 1
-1. Point 2
-1. Point 3
-1. Point 4
+1. Sign in using your Google account with OAuth2
+2. Full Create, Read, Update and Delete functionality
+3. Mobile Responsive
+4. Filtering by category
 
-![website-complete](https://www.pngkey.com/png/detail/233-2332677_ega-png.png)
+![website-complete](https://github.com/Gulrugar/grafbase_flexibble/assets/105955316/53bd12fa-bdfb-49dc-92a4-a70dfd8d89b6)
