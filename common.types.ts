@@ -35,12 +35,6 @@ export interface UserProfile {
   linkedInUrl: string | null;
   projects: {
     edges: { node: ProjectInterface }[];
-    pageInfo: {
-      hasPreviousPage: boolean;
-      hasNextPage: boolean;
-      startCursor: string;
-      endCursor: string;
-    };
   };
 }
 

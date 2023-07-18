@@ -29,14 +29,8 @@ export const createUserMutation = `
 `;
 
 export const projectsQuery = `
-  query getProjects($category: String, $endCursor: String) {
-    projectSearch(first: 20, after: $endCursor, filter: {category: {eq: $category}}) {
-      pageInfo {
-        hasNextPage
-        hasPreviousPage
-        startCursor
-        endCursor
-      }
+  query getProjects($category: String) {
+    projectSearch(first: 50, filter: {category: {eq: $category}}) {
       edges {
         node {
           title
@@ -60,13 +54,7 @@ export const projectsQuery = `
 
 export const projectsQueryAll = `
   query getProjects() {
-    projectSearch(first: 100) {
-      pageInfo {
-        hasNextPage
-        hasPreviousPage
-        startCursor
-        endCursor
-      }
+    projectSearch(first: 50) {
       edges {
         node {
           title
